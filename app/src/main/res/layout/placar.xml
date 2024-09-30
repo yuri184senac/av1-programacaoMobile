@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gradStop"
+    android:padding="15dp">
+
+    <!-- Title of the game -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jogo de Dados"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"/>
+
+    <!-- Score Header -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLACAR:"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:gravity="center"/>
+
+    <!-- Player 1 Score -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jogador1"
+            android:textSize="24sp"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:layout_marginEnd="20dp" />
+
+        <TextView
+            android:id="@+id/player1Score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <!-- Player 2 Score -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jogador2"
+            android:textSize="24sp"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:layout_marginEnd="20dp" />
+
+        <TextView
+            android:id="@+id/player2Score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <!-- Tie Score -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Empates"
+            android:textSize="24sp"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:layout_marginEnd="20dp" />
+
+        <TextView
+            android:id="@+id/tieScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <!-- Return Button -->
+    <Button
+        android:id="@+id/returnButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retornar"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:layout_marginTop="40dp"
+        android:padding="10dp" />
+</LinearLayout>
