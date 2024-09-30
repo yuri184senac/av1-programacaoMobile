@@ -88,7 +88,7 @@
 
     <!-- Button to Roll Dice -->
     <Button
-        android:id="@+id/rollDiceButton"
+        android:id="@+id/rolarDados"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Jogar os Dados"
@@ -99,7 +99,7 @@
 
     <!-- Button to View Score -->
     <Button
-        android:id="@+id/viewScoreButton"
+        android:id="@+id/verPlacar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ver Placar"
