@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/gradStop"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <!-- Title of the game -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jogo de Dados"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+    <!-- Subtitle or status of the game -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INÍCIO"
+        android:textSize="34sp"
+        android:textStyle="normal"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="10dp" />
+
+    <!-- Dice section -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <!-- Dice for Player 1 -->
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="20dp" />
+
+        <!-- Dice for Player 2 -->
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+    </LinearLayout>
+
+    <!-- Roll Dice Button -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jogar os Dados"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:padding="10dp" />
+
+    <!-- View Score Button -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver Placar"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:padding="10dp" />
+</LinearLayout>
