@@ -1,69 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:background="@color/gradStop"
-    android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    android:gravity="center"
     android:padding="15dp">
 
-    <!-- Title of the game -->
+    <!-- Game Title -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Jogo de Dados"
         android:textSize="40sp"
         android:textStyle="bold"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:gravity="center"/>
 
-    <!-- Subtitle or status of the game -->
+    <!-- Game Start Label -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="INÍCIO"
         android:textSize="34sp"
-        android:textStyle="normal"
         android:textColor="@color/white"
         android:gravity="center"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="20dp" />
 
-    <!-- Dice section -->
+    <!-- Player Names and Dice Section -->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:gravity="center"
         android:layout_marginTop="20dp">
 
-        <!-- Dice for Player 1 -->
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginEnd="20dp" />
+        <!-- Player Names (Jogador 1 & Jogador 2) -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
 
-        <!-- Dice for Player 2 -->
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jogador1"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:layout_marginEnd="100dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jogador2"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <!-- Dice Images for Players -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+            <!-- Dice for Player 1 -->
+            <ImageView
+                android:id="@+id/dicePlayer1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/dice1"
+                android:layout_marginEnd="60dp"/>
+
+            <!-- Dice for Player 2 -->
+            <ImageView
+                android:id="@+id/dicePlayer2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/dice2"/>
+        </LinearLayout>
     </LinearLayout>
 
-    <!-- Roll Dice Button -->
+    <!-- Button to Roll Dice -->
     <Button
+        android:id="@+id/rollDiceButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Jogar os Dados"
+        android:backgroundTint="@color/colorPrimary"
         android:textColor="@color/white"
-        android:layout_marginTop="20dp"
-        android:padding="10dp" />
+        android:layout_marginTop="40dp"
+        android:padding="10dp"/>
 
-    <!-- View Score Button -->
+    <!-- Button to View Score -->
     <Button
+        android:id="@+id/viewScoreButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ver Placar"
+        android:backgroundTint="@color/colorPrimary"
         android:textColor="@color/white"
-        android:layout_marginTop="10dp"
-        android:padding="10dp" />
+        android:layout_marginTop="20dp"
+        android:padding="10dp"/>
 </LinearLayout>
